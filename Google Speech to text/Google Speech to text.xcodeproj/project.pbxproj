@@ -13,6 +13,12 @@
 		9A0A2C0C21CE1EEC00BBE544 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A0A2C0A21CE1EEC00BBE544 /* Main.storyboard */; };
 		9A0A2C1821CE1EEC00BBE544 /* Google_Speech_to_textTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0A2C1721CE1EEC00BBE544 /* Google_Speech_to_textTests.swift */; };
 		9A0A2C2321CE1EEC00BBE544 /* Google_Speech_to_textUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0A2C2221CE1EEC00BBE544 /* Google_Speech_to_textUITests.swift */; };
+		9A0A2C3221CE2B9A00BBE544 /* GoogleLangCode.JSON in Resources */ = {isa = PBXBuildFile; fileRef = 9A0A2C3121CE2B9A00BBE544 /* GoogleLangCode.JSON */; };
+		9A0A2C3521CE3B5E00BBE544 /* GoogleSpeechToTextManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0A2C3421CE3B5E00BBE544 /* GoogleSpeechToTextManager.swift */; };
+		9A0A2C3721CE640700BBE544 /* GoogleLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0A2C3621CE640700BBE544 /* GoogleLanguage.swift */; };
+		9A0A2C3921CEB35C00BBE544 /* GoogleSpeechResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0A2C3821CEB35C00BBE544 /* GoogleSpeechResult.swift */; };
+		9A92234021CF9BF100EFF1DA /* GoogleLongProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A92233F21CF9BF100EFF1DA /* GoogleLongProgress.swift */; };
+		9A92234221CFA01C00EFF1DA /* GoogleLongSpeechManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A92234121CFA01C00EFF1DA /* GoogleLongSpeechManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +52,12 @@
 		9A0A2C1E21CE1EEC00BBE544 /* Google Speech to textUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Google Speech to textUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A0A2C2221CE1EEC00BBE544 /* Google_Speech_to_textUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Google_Speech_to_textUITests.swift; sourceTree = "<group>"; };
 		9A0A2C2421CE1EEC00BBE544 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A0A2C3121CE2B9A00BBE544 /* GoogleLangCode.JSON */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = GoogleLangCode.JSON; sourceTree = "<group>"; };
+		9A0A2C3421CE3B5E00BBE544 /* GoogleSpeechToTextManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSpeechToTextManager.swift; sourceTree = "<group>"; };
+		9A0A2C3621CE640700BBE544 /* GoogleLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleLanguage.swift; sourceTree = "<group>"; };
+		9A0A2C3821CEB35C00BBE544 /* GoogleSpeechResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSpeechResult.swift; sourceTree = "<group>"; };
+		9A92233F21CF9BF100EFF1DA /* GoogleLongProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleLongProgress.swift; sourceTree = "<group>"; };
+		9A92234121CFA01C00EFF1DA /* GoogleLongSpeechManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleLongSpeechManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,11 +108,13 @@
 		9A0A2C0321CE1EEA00BBE544 /* Google Speech to text */ = {
 			isa = PBXGroup;
 			children = (
+				9A0A2C3321CE3B2E00BBE544 /* GoogleSpeechToText */,
 				9A0A2C0421CE1EEA00BBE544 /* AppDelegate.swift */,
 				9A0A2C0621CE1EEA00BBE544 /* ViewController.swift */,
 				9A0A2C0821CE1EEC00BBE544 /* Assets.xcassets */,
 				9A0A2C0A21CE1EEC00BBE544 /* Main.storyboard */,
 				9A0A2C0D21CE1EEC00BBE544 /* Info.plist */,
+				9A0A2C3021CE2B8600BBE544 /* Resources */,
 				9A0A2C0E21CE1EEC00BBE544 /* Google_Speech_to_text.entitlements */,
 			);
 			path = "Google Speech to text";
@@ -122,6 +136,26 @@
 				9A0A2C2421CE1EEC00BBE544 /* Info.plist */,
 			);
 			path = "Google Speech to textUITests";
+			sourceTree = "<group>";
+		};
+		9A0A2C3021CE2B8600BBE544 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9A0A2C3121CE2B9A00BBE544 /* GoogleLangCode.JSON */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9A0A2C3321CE3B2E00BBE544 /* GoogleSpeechToText */ = {
+			isa = PBXGroup;
+			children = (
+				9A0A2C3421CE3B5E00BBE544 /* GoogleSpeechToTextManager.swift */,
+				9A92234121CFA01C00EFF1DA /* GoogleLongSpeechManager.swift */,
+				9A0A2C3621CE640700BBE544 /* GoogleLanguage.swift */,
+				9A0A2C3821CEB35C00BBE544 /* GoogleSpeechResult.swift */,
+				9A92233F21CF9BF100EFF1DA /* GoogleLongProgress.swift */,
+			);
+			path = GoogleSpeechToText;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,6 +226,11 @@
 				TargetAttributes = {
 					9A0A2C0021CE1EEA00BBE544 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
 					};
 					9A0A2C1221CE1EEC00BBE544 = {
 						CreatedOnToolsVersion = 10.1;
@@ -229,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A0A2C0921CE1EEC00BBE544 /* Assets.xcassets in Resources */,
+				9A0A2C3221CE2B9A00BBE544 /* GoogleLangCode.JSON in Resources */,
 				9A0A2C0C21CE1EEC00BBE544 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,7 +294,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A0A2C3721CE640700BBE544 /* GoogleLanguage.swift in Sources */,
 				9A0A2C0721CE1EEA00BBE544 /* ViewController.swift in Sources */,
+				9A0A2C3521CE3B5E00BBE544 /* GoogleSpeechToTextManager.swift in Sources */,
+				9A92234021CF9BF100EFF1DA /* GoogleLongProgress.swift in Sources */,
+				9A92234221CFA01C00EFF1DA /* GoogleLongSpeechManager.swift in Sources */,
+				9A0A2C3921CEB35C00BBE544 /* GoogleSpeechResult.swift in Sources */,
 				9A0A2C0521CE1EEA00BBE544 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -421,7 +466,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "Google Speech to text/Google_Speech_to_text.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 462M73BZML;
@@ -440,7 +484,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "Google Speech to text/Google_Speech_to_text.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 462M73BZML;

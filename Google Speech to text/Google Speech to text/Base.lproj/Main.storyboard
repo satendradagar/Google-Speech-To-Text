@@ -1,7 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11134" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11134"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -673,7 +674,7 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModuleProvider="target"/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Google_Speech_to_text" customModuleProvider="target"/>
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -688,6 +689,7 @@
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="196" y="240" width="480" height="270"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+                        <value key="minSize" type="size" width="726" height="472"/>
                         <connections>
                             <outlet property="delegate" destination="B8D-0N-5wS" id="98r-iN-zZc"/>
                         </connections>
@@ -703,15 +705,133 @@
         <!--View Controller-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="Google_Speech_to_text" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <rect key="frame" x="0.0" y="0.0" width="726" height="472"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="jKG-q8-cGu">
+                                <rect key="frame" x="20" y="328" width="138" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="138" id="Mdo-3j-03W"/>
+                                    <constraint firstAttribute="height" constant="34" id="hdj-OD-P1R"/>
+                                </constraints>
+                                <buttonCell key="cell" type="square" title="Select Audio" bezelStyle="shadowlessSquare" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="oPU-Ht-Wx8">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="selectAudioAction:" target="XfG-lQ-9wD" id="FCX-hO-8Xy"/>
+                                </connections>
+                            </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ggW-Be-ToN">
+                                <rect key="frame" x="176" y="327" width="532" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="vKj-VI-hGv"/>
+                                </constraints>
+                                <textFieldCell key="cell" lineBreakMode="clipping" borderStyle="bezel" alignment="left" placeholderString="Path of audio file" drawsBackground="YES" id="ZMH-S8-8Kp">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ceB-oP-T41">
+                                <rect key="frame" x="19" y="223" width="142" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="137" id="IsG-4K-w8F"/>
+                                </constraints>
+                                <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" selectedItem="Tu8-Yi-bJb" id="2vh-Fg-KQe">
+                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="menu"/>
+                                    <menu key="menu" id="cUQ-Jc-Qrp">
+                                        <items>
+                                            <menuItem title="Item 1" state="on" id="Tu8-Yi-bJb"/>
+                                            <menuItem title="Item 2" id="PCr-tM-UBa"/>
+                                            <menuItem title="Item 3" id="Kr0-WO-45J"/>
+                                        </items>
+                                    </menu>
+                                </popUpButtonCell>
+                                <connections>
+                                    <action selector="languageDidChanged:" target="XfG-lQ-9wD" id="yyK-vE-Zrp"/>
+                                </connections>
+                            </popUpButton>
+                            <button verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dDL-ou-FqL">
+                                <rect key="frame" x="174" y="227" width="95" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="91" id="cVV-lV-TZs"/>
+                                </constraints>
+                                <buttonCell key="cell" type="check" title="Punctuation" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="gLl-hH-VrI">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="punctuationCheckAction:" target="XfG-lQ-9wD" id="w0r-6x-RR3"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ll8-Dr-Fj2">
+                                <rect key="frame" x="294" y="220" width="148" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="148" id="Nfi-Ag-xIu"/>
+                                    <constraint firstAttribute="height" constant="34" id="wjN-8k-gA6"/>
+                                </constraints>
+                                <buttonCell key="cell" type="square" title="Generate CSV" bezelStyle="shadowlessSquare" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="qU4-qP-5RV">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="generateCSVAction:" target="XfG-lQ-9wD" id="1dM-rw-Y3F"/>
+                                </connections>
+                            </button>
+                            <progressIndicator wantsLayer="YES" maxValue="100" indeterminate="YES" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="5GN-lM-vrV">
+                                <rect key="frame" x="21" y="146" width="685" height="20"/>
+                            </progressIndicator>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Rgw-gN-5Le">
+                                <rect key="frame" x="294" y="73" width="138" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="BCe-IF-WDo"/>
+                                    <constraint firstAttribute="width" constant="138" id="pDa-8l-XGp"/>
+                                </constraints>
+                                <buttonCell key="cell" type="square" title="Download CSV" bezelStyle="shadowlessSquare" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="8Od-xx-Wc9">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="downloadCSVAction:" target="XfG-lQ-9wD" id="ZTu-5e-dqc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="5GN-lM-vrV" firstAttribute="top" secondItem="ll8-Dr-Fj2" secondAttribute="bottom" constant="55" id="1bI-MD-53w"/>
+                            <constraint firstItem="jKG-q8-cGu" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="FMa-FE-QqX"/>
+                            <constraint firstItem="ll8-Dr-Fj2" firstAttribute="leading" secondItem="dDL-ou-FqL" secondAttribute="trailing" constant="27" id="IOC-Fa-gjL"/>
+                            <constraint firstItem="ggW-Be-ToN" firstAttribute="leading" secondItem="jKG-q8-cGu" secondAttribute="trailing" constant="18" id="IwC-dU-4aN"/>
+                            <constraint firstItem="ggW-Be-ToN" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="111" id="O7z-HN-7F3"/>
+                            <constraint firstItem="5GN-lM-vrV" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="21" id="UlB-DB-wC2"/>
+                            <constraint firstItem="Rgw-gN-5Le" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="Yej-zO-yIc"/>
+                            <constraint firstItem="jKG-q8-cGu" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="110" id="Ziy-6N-LC8"/>
+                            <constraint firstItem="dDL-ou-FqL" firstAttribute="leading" secondItem="ceB-oP-T41" secondAttribute="trailing" constant="18" id="dpX-6C-228"/>
+                            <constraint firstItem="ceB-oP-T41" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="21" id="hKe-pF-E5E"/>
+                            <constraint firstItem="ll8-Dr-Fj2" firstAttribute="centerY" secondItem="dDL-ou-FqL" secondAttribute="centerY" id="iif-sM-N9g"/>
+                            <constraint firstAttribute="trailing" secondItem="ggW-Be-ToN" secondAttribute="trailing" constant="18" id="kJl-Fd-Gkt"/>
+                            <constraint firstItem="ceB-oP-T41" firstAttribute="top" secondItem="jKG-q8-cGu" secondAttribute="bottom" constant="81" id="qL6-xF-uve"/>
+                            <constraint firstItem="Rgw-gN-5Le" firstAttribute="top" secondItem="5GN-lM-vrV" secondAttribute="bottom" constant="40" id="r88-xh-Zl6"/>
+                            <constraint firstItem="dDL-ou-FqL" firstAttribute="centerY" secondItem="ceB-oP-T41" secondAttribute="centerY" id="rSf-12-ENn"/>
+                            <constraint firstAttribute="trailing" secondItem="5GN-lM-vrV" secondAttribute="trailing" constant="20" id="uxH-OY-9Ys"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="audioButton" destination="jKG-q8-cGu" id="fVo-XO-fUG"/>
+                        <outlet property="audioPathFiled" destination="ggW-Be-ToN" id="jOj-AD-VFt"/>
+                        <outlet property="downloadCSVButton" destination="Rgw-gN-5Le" id="azX-7S-qOF"/>
+                        <outlet property="generateCSVButton" destination="ll8-Dr-Fj2" id="kDJ-QY-rci"/>
+                        <outlet property="languageMenu" destination="ceB-oP-T41" id="Zn1-4s-QUK"/>
+                        <outlet property="progressBar" destination="5GN-lM-vrV" id="dYi-4Z-Qej"/>
+                        <outlet property="punctuationCheck" destination="dDL-ou-FqL" id="OGx-nZ-YQ3"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="198" y="756"/>
         </scene>
     </scenes>
 </document>
