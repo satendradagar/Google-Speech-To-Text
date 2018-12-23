@@ -1,0 +1,599 @@
+{
+  "languageCodes" : [
+      {
+          "localizeName" : "English (United States)",
+          "name" : "English (United States)",
+          "code" : "en-US"
+      },
+    {
+      "localizeName" : "Afrikaans (Suid-Afrika)",
+      "name" : "Afrikaans (South Africa)",
+      "code" : "af-ZA"
+    },
+    {
+      "localizeName" : "አማርኛ (ኢትዮጵያ)",
+      "name" : "Amharic (Ethiopia)",
+      "code" : "am-ET"
+    },
+    {
+      "localizeName" : "Հայ (Հայաստան)",
+      "name" : "Armenian (Armenia)",
+      "code" : "hy-AM"
+    },
+    {
+      "localizeName" : "Azərbaycan (Azərbaycan)",
+      "name" : "Azerbaijani (Azerbaijan)",
+      "code" : "az-AZ"
+    },
+    {
+      "localizeName" : "Bahasa Indonesia (Indonesia)",
+      "name" : "Indonesian (Indonesia)",
+      "code" : "id-ID"
+    },
+    {
+      "localizeName" : "Bahasa Melayu (Malaysia)",
+      "name" : "Malay (Malaysia)",
+      "code" : "ms-MY"
+    },
+    {
+      "localizeName" : "বাংলা (বাংলাদেশ)",
+      "name" : "Bengali (Bangladesh)",
+      "code" : "bn-BD"
+    },
+    {
+      "localizeName" : "বাংলা (ভারত)",
+      "name" : "Bengali (India)",
+      "code" : "bn-IN"
+    },
+    {
+      "localizeName" : "Català (Espanya)",
+      "name" : "Catalan (Spain)",
+      "code" : "ca-ES"
+    },
+    {
+      "localizeName" : "Čeština (Česká republika)",
+      "name" : "Czech (Czech Republic)",
+      "code" : "cs-CZ"
+    },
+    {
+      "localizeName" : "Dansk (Danmark)",
+      "name" : "Danish (Denmark)",
+      "code" : "da-DK"
+    },
+    {
+      "localizeName" : "Deutsch (Deutschland)",
+      "name" : "German (Germany)",
+      "code" : "de-DE"
+    },
+    {
+      "localizeName" : "English (Australia)",
+      "name" : "English (Australia)",
+      "code" : "en-AU"
+    },
+    {
+      "localizeName" : "English (Canada)",
+      "name" : "English (Canada)",
+      "code" : "en-CA"
+    },
+    {
+      "localizeName" : "English (Ghana)",
+      "name" : "English (Ghana)",
+      "code" : "en-GH"
+    },
+    {
+      "localizeName" : "English (Great Britain)",
+      "name" : "English (United Kingdom)",
+      "code" : "en-GB"
+    },
+    {
+      "localizeName" : "English (India)",
+      "name" : "English (India)",
+      "code" : "en-IN"
+    },
+    {
+      "localizeName" : "English (Ireland)",
+      "name" : "English (Ireland)",
+      "code" : "en-IE"
+    },
+    {
+      "localizeName" : "English (Kenya)",
+      "name" : "English (Kenya)",
+      "code" : "en-KE"
+    },
+    {
+      "localizeName" : "English (New Zealand)",
+      "name" : "English (New Zealand)",
+      "code" : "en-NZ"
+    },
+    {
+      "localizeName" : "English (Nigeria)",
+      "name" : "English (Nigeria)",
+      "code" : "en-NG"
+    },
+    {
+      "localizeName" : "English (Philippines)",
+      "name" : "English (Philippines)",
+      "code" : "en-PH"
+    },
+    {
+      "localizeName" : "English (South Africa)",
+      "name" : "English (South Africa)",
+      "code" : "en-ZA"
+    },
+    {
+      "localizeName" : "English (Tanzania)",
+      "name" : "English (Tanzania)",
+      "code" : "en-TZ"
+    },
+    {
+      "localizeName" : "Español (Argentina)",
+      "name" : "Spanish (Argentina)",
+      "code" : "es-AR"
+    },
+    {
+      "localizeName" : "Español (Bolivia)",
+      "name" : "Spanish (Bolivia)",
+      "code" : "es-BO"
+    },
+    {
+      "localizeName" : "Español (Chile)",
+      "name" : "Spanish (Chile)",
+      "code" : "es-CL"
+    },
+    {
+      "localizeName" : "Español (Colombia)",
+      "name" : "Spanish (Colombia)",
+      "code" : "es-CO"
+    },
+    {
+      "localizeName" : "Español (Costa Rica)",
+      "name" : "Spanish (Costa Rica)",
+      "code" : "es-CR"
+    },
+    {
+      "localizeName" : "Español (Ecuador)",
+      "name" : "Spanish (Ecuador)",
+      "code" : "es-EC"
+    },
+    {
+      "localizeName" : "Español (El Salvador)",
+      "name" : "Spanish (El Salvador)",
+      "code" : "es-SV"
+    },
+    {
+      "localizeName" : "Español (España)",
+      "name" : "Spanish (Spain)",
+      "code" : "es-ES"
+    },
+    {
+      "localizeName" : "Español (Estados Unidos)",
+      "name" : "Spanish (United States)",
+      "code" : "es-US"
+    },
+    {
+      "localizeName" : "Español (Guatemala)",
+      "name" : "Spanish (Guatemala)",
+      "code" : "es-GT"
+    },
+    {
+      "localizeName" : "Español (Honduras)",
+      "name" : "Spanish (Honduras)",
+      "code" : "es-HN"
+    },
+    {
+      "localizeName" : "Español (México)",
+      "name" : "Spanish (Mexico)",
+      "code" : "es-MX"
+    },
+    {
+      "localizeName" : "Español (Nicaragua)",
+      "name" : "Spanish (Nicaragua)",
+      "code" : "es-NI"
+    },
+    {
+      "localizeName" : "Español (Panamá)",
+      "name" : "Spanish (Panama)",
+      "code" : "es-PA"
+    },
+    {
+      "localizeName" : "Español (Paraguay)",
+      "name" : "Spanish (Paraguay)",
+      "code" : "es-PY"
+    },
+    {
+      "localizeName" : "Español (Perú)",
+      "name" : "Spanish (Peru)",
+      "code" : "es-PE"
+    },
+    {
+      "localizeName" : "Español (Puerto Rico)",
+      "name" : "Spanish (Puerto Rico)",
+      "code" : "es-PR"
+    },
+    {
+      "localizeName" : "Español (República Dominicana)",
+      "name" : "Spanish (Dominican Republic)",
+      "code" : "es-DO"
+    },
+    {
+      "localizeName" : "Español (Uruguay)",
+      "name" : "Spanish (Uruguay)",
+      "code" : "es-UY"
+    },
+    {
+      "localizeName" : "Español (Venezuela)",
+      "name" : "Spanish (Venezuela)",
+      "code" : "es-VE"
+    },
+    {
+      "localizeName" : "Euskara (Espainia)",
+      "name" : "Basque (Spain)",
+      "code" : "eu-ES"
+    },
+    {
+      "localizeName" : "Filipino (Pilipinas)",
+      "name" : "Filipino (Philippines)",
+      "code" : "fil-PH"
+    },
+    {
+      "localizeName" : "Français (Canada)",
+      "name" : "French (Canada)",
+      "code" : "fr-CA"
+    },
+    {
+      "localizeName" : "Français (France)",
+      "name" : "French (France)",
+      "code" : "fr-FR"
+    },
+    {
+      "localizeName" : "Galego (España)",
+      "name" : "Galician (Spain)",
+      "code" : "gl-ES"
+    },
+    {
+      "localizeName" : "ქართული (საქართველო)",
+      "name" : "Georgian (Georgia)",
+      "code" : "ka-GE"
+    },
+    {
+      "localizeName" : "ગુજરાતી (ભારત)",
+      "name" : "Gujarati (India)",
+      "code" : "gu-IN"
+    },
+    {
+      "localizeName" : "Hrvatski (Hrvatska)",
+      "name" : "Croatian (Croatia)",
+      "code" : "hr-HR"
+    },
+    {
+      "localizeName" : "IsiZulu (Ningizimu Afrika)",
+      "name" : "Zulu (South Africa)",
+      "code" : "zu-ZA"
+    },
+    {
+      "localizeName" : "Íslenska (Ísland)",
+      "name" : "Icelandic (Iceland)",
+      "code" : "is-IS"
+    },
+    {
+      "localizeName" : "Italiano (Italia)",
+      "name" : "Italian (Italy)",
+      "code" : "it-IT"
+    },
+    {
+      "localizeName" : "Jawa (Indonesia)",
+      "name" : "Javanese (Indonesia)",
+      "code" : "jv-ID"
+    },
+    {
+      "localizeName" : "ಕನ್ನಡ (ಭಾರತ)",
+      "name" : "Kannada (India)",
+      "code" : "kn-IN"
+    },
+    {
+      "localizeName" : "ភាសាខ្មែរ (កម្ពុជា)",
+      "name" : "Khmer (Cambodia)",
+      "code" : "km-KH"
+    },
+    {
+      "localizeName" : "ລາວ (ລາວ)",
+      "name" : "Lao (Laos)",
+      "code" : "lo-LA"
+    },
+    {
+      "localizeName" : "Latviešu (latviešu)",
+      "name" : "Latvian (Latvia)",
+      "code" : "lv-LV"
+    },
+    {
+      "localizeName" : "Lietuvių (Lietuva)",
+      "name" : "Lithuanian (Lithuania)",
+      "code" : "lt-LT"
+    },
+    {
+      "localizeName" : "Magyar (Magyarország)",
+      "name" : "Hungarian (Hungary)",
+      "code" : "hu-HU"
+    },
+    {
+      "localizeName" : "മലയാളം (ഇന്ത്യ)",
+      "name" : "Malayalam (India)",
+      "code" : "ml-IN"
+    },
+    {
+      "localizeName" : "मराठी (भारत)",
+      "name" : "Marathi (India)",
+      "code" : "mr-IN"
+    },
+    {
+      "localizeName" : "Nederlands (Nederland)",
+      "name" : "Dutch (Netherlands)",
+      "code" : "nl-NL"
+    },
+    {
+      "localizeName" : "नेपाली (नेपाल)",
+      "name" : "Nepali (Nepal)",
+      "code" : "ne-NP"
+    },
+    {
+      "localizeName" : "Norsk bokmål (Norge)",
+      "name" : "Norwegian Bokmål (Norway)",
+      "code" : "nb-NO"
+    },
+    {
+      "localizeName" : "Polski (Polska)",
+      "name" : "Polish (Poland)",
+      "code" : "pl-PL"
+    },
+    {
+      "localizeName" : "Português (Brasil)",
+      "name" : "Portuguese (Brazil)",
+      "code" : "pt-BR"
+    },
+    {
+      "localizeName" : "Português (Portugal)",
+      "name" : "Portuguese (Portugal)",
+      "code" : "pt-PT"
+    },
+    {
+      "localizeName" : "Română (România)",
+      "name" : "Romanian (Romania)",
+      "code" : "ro-RO"
+    },
+    {
+      "localizeName" : "සිංහල (ශ්රී ලංකාව)",
+      "name" : "Sinhala (Sri Lanka)",
+      "code" : "si-LK"
+    },
+    {
+      "localizeName" : "Slovenčina (Slovensko)",
+      "name" : "Slovak (Slovakia)",
+      "code" : "sk-SK"
+    },
+    {
+      "localizeName" : "Slovenščina (Slovenija)",
+      "name" : "Slovenian (Slovenia)",
+      "code" : "sl-SI"
+    },
+    {
+      "localizeName" : "Urang (Indonesia)",
+      "name" : "Sundanese (Indonesia)",
+      "code" : "su-ID"
+    },
+    {
+      "localizeName" : "Swahili (Tanzania)",
+      "name" : "Swahili (Tanzania)",
+      "code" : "sw-TZ"
+    },
+    {
+      "localizeName" : "Swahili (Kenya)",
+      "name" : "Swahili (Kenya)",
+      "code" : "sw-KE"
+    },
+    {
+      "localizeName" : "Suomi (Suomi)",
+      "name" : "Finnish (Finland)",
+      "code" : "fi-FI"
+    },
+    {
+      "localizeName" : "Svenska (Sverige)",
+      "name" : "Swedish (Sweden)",
+      "code" : "sv-SE"
+    },
+    {
+      "localizeName" : "தமிழ் (இந்தியா)",
+      "name" : "Tamil (India)",
+      "code" : "ta-IN"
+    },
+    {
+      "localizeName" : "தமிழ் (சிங்கப்பூர்)",
+      "name" : "Tamil (Singapore)",
+      "code" : "ta-SG"
+    },
+    {
+      "localizeName" : "தமிழ் (இலங்கை)",
+      "name" : "Tamil (Sri Lanka)",
+      "code" : "ta-LK"
+    },
+    {
+      "localizeName" : "தமிழ் (மலேசியா)",
+      "name" : "Tamil (Malaysia)",
+      "code" : "ta-MY"
+    },
+    {
+      "localizeName" : "తెలుగు (భారతదేశం)",
+      "name" : "Telugu (India)",
+      "code" : "te-IN"
+    },
+    {
+      "localizeName" : "Tiếng Việt (Việt Nam)",
+      "name" : "Vietnamese (Vietnam)",
+      "code" : "vi-VN"
+    },
+    {
+      "localizeName" : "Türkçe (Türkiye)",
+      "name" : "Turkish (Turkey)",
+      "code" : "tr-TR"
+    },
+    {
+      "localizeName" : "اردو (پاکستان)",
+      "name" : "Urdu (Pakistan)",
+      "code" : "ur-PK"
+    },
+    {
+      "localizeName" : "اردو (بھارت)",
+      "name" : "Urdu (India)",
+      "code" : "ur-IN"
+    },
+    {
+      "localizeName" : "Ελληνικά (Ελλάδα)",
+      "name" : "Greek (Greece)",
+      "code" : "el-GR"
+    },
+    {
+      "localizeName" : "Български (България)",
+      "name" : "Bulgarian (Bulgaria)",
+      "code" : "bg-BG"
+    },
+    {
+      "localizeName" : "Русский (Россия)",
+      "name" : "Russian (Russia)",
+      "code" : "ru-RU"
+    },
+    {
+      "localizeName" : "Српски (Србија)",
+      "name" : "Serbian (Serbia)",
+      "code" : "sr-RS"
+    },
+    {
+      "localizeName" : "Українська (Україна)",
+      "name" : "Ukrainian (Ukraine)",
+      "code" : "uk-UA"
+    },
+    {
+      "localizeName" : "עברית (ישראל)",
+      "name" : "Hebrew (Israel)",
+      "code" : "he-IL"
+    },
+    {
+      "localizeName" : "العربية (إسرائيل)",
+      "name" : "Arabic (Israel)",
+      "code" : "ar-IL"
+    },
+    {
+      "localizeName" : "العربية (الأردن)",
+      "name" : "Arabic (Jordan)",
+      "code" : "ar-JO"
+    },
+    {
+      "localizeName" : "العربية (الإمارات)",
+      "name" : "Arabic (United Arab Emirates)",
+      "code" : "ar-AE"
+    },
+    {
+      "localizeName" : "العربية (البحرين)",
+      "name" : "Arabic (Bahrain)",
+      "code" : "ar-BH"
+    },
+    {
+      "localizeName" : "العربية (الجزائر)",
+      "name" : "Arabic (Algeria)",
+      "code" : "ar-DZ"
+    },
+    {
+      "localizeName" : "العربية (السعودية)",
+      "name" : "Arabic (Saudi Arabia)",
+      "code" : "ar-SA"
+    },
+    {
+      "localizeName" : "العربية (العراق)",
+      "name" : "Arabic (Iraq)",
+      "code" : "ar-IQ"
+    },
+    {
+      "localizeName" : "العربية (الكويت)",
+      "name" : "Arabic (Kuwait)",
+      "code" : "ar-KW"
+    },
+    {
+      "localizeName" : "العربية (المغرب)",
+      "name" : "Arabic (Morocco)",
+      "code" : "ar-MA"
+    },
+    {
+      "localizeName" : "العربية (تونس)",
+      "name" : "Arabic (Tunisia)",
+      "code" : "ar-TN"
+    },
+    {
+      "localizeName" : "العربية (عُمان)",
+      "name" : "Arabic (Oman)",
+      "code" : "ar-OM"
+    },
+    {
+      "localizeName" : "العربية (فلسطين)",
+      "name" : "Arabic (State of Palestine)",
+      "code" : "ar-PS"
+    },
+    {
+      "localizeName" : "العربية (قطر)",
+      "name" : "Arabic (Qatar)",
+      "code" : "ar-QA"
+    },
+    {
+      "localizeName" : "العربية (لبنان)",
+      "name" : "Arabic (Lebanon)",
+      "code" : "ar-LB"
+    },
+    {
+      "localizeName" : "العربية (مصر)",
+      "name" : "Arabic (Egypt)",
+      "code" : "ar-EG"
+    },
+    {
+      "localizeName" : "فارسی (ایران)",
+      "name" : "Persian (Iran)",
+      "code" : "fa-IR"
+    },
+    {
+      "localizeName" : "हिन्दी (भारत)",
+      "name" : "Hindi (India)",
+      "code" : "hi-IN"
+    },
+    {
+      "localizeName" : "ไทย (ประเทศไทย)",
+      "name" : "Thai (Thailand)",
+      "code" : "th-TH"
+    },
+    {
+      "localizeName" : "한국어 (대한민국)",
+      "name" : "Korean (South Korea)",
+      "code" : "ko-KR"
+    },
+    {
+      "localizeName" : "國語 (台灣)",
+      "name" : "Chinese, Mandarin (Traditional, Taiwan)",
+      "code" : "cmn-Hant-TW"
+    },
+    {
+      "localizeName" : "廣東話 (香港)",
+      "name" : "Chinese, Cantonese (Traditional, Hong Kong)",
+      "code" : "yue-Hant-HK"
+    },
+    {
+      "localizeName" : "日本語（日本）",
+      "name" : "Japanese (Japan)",
+      "code" : "ja-JP"
+    },
+    {
+      "localizeName" : "普通話 (香港)",
+      "name" : "Chinese, Mandarin (Simplified, Hong Kong)",
+      "code" : "cmn-Hans-HK"
+    },
+    {
+      "localizeName" : "普通话 (中国大陆)",
+      "name" : "Chinese, Mandarin (Simplified, China)",
+      "code" : "cmn-Hans-CN"
+    }
+  ]
+}
