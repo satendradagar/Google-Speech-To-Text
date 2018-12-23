@@ -29,7 +29,7 @@ let recognize = "recognize"
 let longrunningrecognize = "longrunningrecognize"
 let serverURL = "https://speech.googleapis.com/v1/speech:"
 
-let apiKey = "AIzaSyDYaPsebwsymReg3wy3f12Uk7BXC_4Q-t8"
+//let apiKey = "API KEY"
 
 class GoogleSpeechToTextManager: NSObject {
 
